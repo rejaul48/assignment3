@@ -11,15 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+    <!-- this is my fontawsome kit link -->
+    <script src="https://kit.fontawesome.com/43c9d1f051.js" crossorigin="anonymous"></script>
     <!-- daisyUI and tailwind css link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* vanilla css */
-        *{
+        * {
             font-family: "Manrope", sans-serie;
+            
         }
-
     </style>
 
 </head>
@@ -29,9 +31,43 @@
     <!-- header -->
     <header>
 
-        <div>
+        <!-- header container -->
+        <div class="container mx-auto mt-4">
 
-          
+            <!-- this is daisiUI component -->
+            <div class="navbar bg-base-100">
+
+                <!-- this is navabr left side -->
+                <div class="navbar-start ml-2">
+
+                    <a  href="#" class="flex items-center"><span class="bg-[#ABEF5F] px-1 rounded-full mr-1"><i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i></span> <span class="text-3xl font-bold">Rinterio</span></a>
+                </div>
+
+                <!-- this is navbar center -->
+                <div class="navbar-center hidden lg:flex mr-2">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-semibold text-gray-700">Home</a></li>
+                        <li><a class="font-semibold text-gray-400">Services</a></li>
+                        <li><a class="font-semibold text-gray-400">Portfolio</a></li>
+                        <li><a class="font-semibold text-gray-400">Blogs</a></li>
+                        <li><a class="font-semibold text-gray-400">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- this is navbar right side -->
+                <div class="navbar-end gap-3">
+                    <a href="#" class="bg-white shadow-md px-3 py-2 rounded-full hidden md:block "><i class="fa-solid fa-magnifying-glass "></i></a>
+                    <a href="#"  class="bg-white shadow-md px-3 py-2 rounded-full hidden md:block "><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#" class="bg-[#ABEF5F] py-2 px-3 rounded-3xl hidden md:block md:font-bold md:text-[15px] "> Book Consult<span class="bg-black px-2 py-1 rounded-full mr-1 ml-2 text-lg"><i class="fa-solid fa-arrow-right -rotate-45 text-xl text-white"></i></span></a>
+
+                    <!-- this icon or bar is only for mobile responsive -->
+                    <a href="#" class="lg:hidden text-2xl bg-white shadow-md px-2 py-1 rounded-full mr-2"><i class="fa-solid fa-bars-staggered"></i></a>
+
+                    <!-- this is for tab and mobile view only -->
+                   
+
+                </div>
+            </div>
 
         </div>
 
@@ -40,7 +76,7 @@
     <!-- main content area -->
     <main>
 
-        <h3 class="text-4xl">This is test purpose</h3>
+
 
     </main>
 
