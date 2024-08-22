@@ -20,7 +20,7 @@
         /* vanilla css */
         * {
             font-family: "Manrope", sans-serie;
-            
+
         }
     </style>
 
@@ -29,18 +29,20 @@
 <body>
 
     <!-- header -->
-    <header>
+    <header class="bg-base-200 pb-20">
 
         <!-- header container -->
-        <div class="container mx-auto mt-4">
+        <div class="container mx-auto pt-4">
 
             <!-- this is daisiUI component -->
-            <div class="navbar bg-base-100">
+            <div class="navbar">
 
                 <!-- this is navabr left side -->
                 <div class="navbar-start ml-2">
 
-                    <a  href="#" class="flex items-center"><span class="bg-[#ABEF5F] px-1 rounded-full mr-1"><i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i></span> <span class="text-3xl font-bold">Rinterio</span></a>
+                    <a href="#" class="flex items-center"><span class="bg-[#ABEF5F] px-1 rounded-full mr-1"><i
+                                class="fa-solid fa-arrow-right -rotate-45 text-xl"></i></span> <span
+                            class="text-3xl font-bold">Rinterio</span></a>
                 </div>
 
                 <!-- this is navbar center -->
@@ -56,27 +58,196 @@
 
                 <!-- this is navbar right side -->
                 <div class="navbar-end gap-3">
-                    <a href="#" class="bg-white shadow-md px-3 py-2 rounded-full hidden md:block "><i class="fa-solid fa-magnifying-glass "></i></a>
-                    <a href="#"  class="bg-white shadow-md px-3 py-2 rounded-full hidden md:block "><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a href="#" class="bg-[#ABEF5F] py-2 px-3 rounded-3xl hidden md:block md:font-bold md:text-[15px] "> Book Consult<span class="bg-black px-2 py-1 rounded-full mr-1 ml-2 text-lg"><i class="fa-solid fa-arrow-right -rotate-45 text-xl text-white"></i></span></a>
+                    <a href="#" class="bg-white shadow-md px-3 py-2 rounded-full hidden md:block "><i
+                            class="fa-solid fa-magnifying-glass "></i></a>
+                    <a href="#" class="bg-white shadow-md px-3 py-2 rounded-full hidden md:block "><i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#" class="bg-[#ABEF5F] py-2 px-3 rounded-3xl hidden md:block md:font-bold md:text-[15px] ">
+                        Book Consult<span class="bg-black px-2 py-1 rounded-full mr-1 ml-2 text-lg"><i
+                                class="fa-solid fa-arrow-right -rotate-45 text-xl text-white"></i></span></a>
 
                     <!-- this icon or bar is only for mobile responsive -->
-                    <a href="#" class="lg:hidden text-2xl bg-white shadow-md px-2 py-1 rounded-full mr-2"><i class="fa-solid fa-bars-staggered"></i></a>
+                    <a href="#" class="lg:hidden text-2xl bg-white shadow-md px-2 py-1 rounded-full mr-2"><i
+                            class="fa-solid fa-bars-staggered"></i></a>
 
                     <!-- this is for tab and mobile view only -->
-                   
+
 
                 </div>
             </div>
 
         </div>
 
+        <!-- hero section -->
+        <div class="hero bg-base-200 ">
+            <div class="hero-content text-center w-full">
+                <div class="hero-container">
+                    <div class="flex justify-center items-center">
+                        <img src="images/banner.png" alt=" hero banner img">
+                    </div>
+                    <h1 class="text-2xl font-bold mt-5 
+                    md:text-4xl md:w-5/6 md:mx-auto
+                    lg:text-6xl lg:leading-tight lg:font-extrabold
+
+                    ">A barn house of this design has a striking appearance</h1>
+                    <p class="py-6 text-xs text-gray-600 mb-2 
+                    md:text-lg md:w-5/6 md:mx-auto
+                    lg:text-[16px] lg:text-center
+
+                    ">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                    </p>
+                    <a href="#" class="bg-[#ABEF5F] bg-opacity-50 px-10 py-2 border-[#ABEF5F] border-solid border-2 rounded-3xl md:font-bold md:text-xl 
+                    md:w-3/8 md:py-4 
+                    lg:text-xl ">
+                        Book Consult<span
+                            class="bg-[#ABEF5F] bg-opacity-100  px-2 py-1 rounded-full mr-1 ml-2 text-lg"><i
+                                class="fa-solid fa-arrow-right -rotate-45 text-xl text-white"></i></span></a>
+
+                </div>
+            </div>
+        </div>
+        <!-- hero section -->
+
+
+
     </header>
 
     <!-- main content area -->
-    <main>
+    <main class=" bg-zinc-200 px-5 pb-12">
+
+        <!-- about us section -->
+        <section class="container mx-auto pb-16 px-2">
+
+            <div class="about_us lg:flex pt-10 md:pt-20 gap-6 md:gap-8 lg:gap-16
+            
+            
+            ">
+
+                <div class="left  relative
+                text-center md:text-center lg:text-left
+                lg:w-1/2
+                ">
+                    <a href="#" class="bg-white px-2 py-1 rounded-full"><span class="mr-2"><i
+                                class="fa-solid fa-arrow-right"></i></span>About Us</a>
+                    <h2 class="font-extrabold my-5
+                    text-3xl
+                    md:text-4xl
+                    lg:text-54xl 
+                    ">We design thoughtful, liveable spaces</h2>
+                    <p class="text-xs px-4 md:px-0 text-center lg:text-left mb-5 text-gray-800
+                    md:w-4/5 md:text-center md:mx-auto 
+                    lg:text-lg  lg:w-full
+                    ">The barn house captivates with its blend of rustic charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+                    <div class="card_container 
+                    
+                    md:grid md:grid-cols-2 md:gap-8 md:px-8 md:my-8
+                    lg:grid lg:grid-cols-1 lg:px-0 
+                    ">
+                        <!-- card -->
+                        <div class="card text-left flex-row gap-4 bg-white rounded-md py-5 px-4
+                        
+                          w-4/5 mx-auto
+                          md:w-full
+                          
+                          lg:w-full
+                          ">
+
+                            <div class="left flex justify-center items-center">
+                                <img src="images/commercial.png" alt="commercial building img" class="w-[50px]">
+                            </div>
+
+                            <div class="right">
+                                <h3 class="text-lg font-bold">Commercial</h3>
+                                <p class="text-xs text-gray-600 mt-1 
+                                  
+                                  lg:w-3/5 leading-relaxed
+                                  ">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+
+                        </div>
+
+                        <!-- card -->
+                        <div class="card text-left flex-row gap-4 bg-white rounded-md py-5 px-4
+                          mt-4 md:mt-0
+                          w-4/5 mx-auto
+                          md:w-full
+                          
+                          lg:w-full 
+                          ">
+
+                            <div class="left flex justify-center items-center">
+                                <img src="images/residential.png" alt="commercial building img" class="w-[50px]">
+                            </div>
+
+                            <div class="right">
+                                <h3 class="text-lg font-bold">Residential</h3>
+                                <p class="text-xs text-gray-600 mt-1 
+                                  
+                                  lg:w-3/5 leading-relaxed
+                                  ">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- top img -->
+                    <div class="absolute -top-[45px] -left-[15px] w-[80px] hidden lg:block">
+                        <img src="images/Vector.png" alt="vector img"
+                            class="border-dashed border-2 border-gray-400 py-3 px-1">
+                    </div>
+
+                </div>
 
 
+                <!-- about right side -->
+                <div class="right w-4/5 mx-auto lg:w-1/2  mt-5 md:w-full md:flex md:justify-center md:items-center">
+                    <img src="images/Rectangle.png" alt="About us img" class="border-dashed border-2 border-gray-400">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- client section -->
+        <section class="container mx-auto bg-white py-4 md:py-12 md:px-12 rounded-xl ">
+
+            <div class="client_card_container 
+            md:grid md:grid-cols-2 md:gap-12
+            lg:grid lg:grid-cols-4 lg:gap-16 
+            ">
+                <!-- Clients card -->
+                <div class="clients_card text-center mt-8 md:mt-0">
+                    <i class="fa-solid fa-comment-dots text-2xl text-gray-400"></i>
+                    <h3 class="text-3xl font-extrabold text-gray-600">235+</h3>
+                    <p class="text-lg font-semibold text-gray-500">Happy Client Review</p>
+                </div>
+
+                <!-- Clients card -->
+                <div class="clients_card text-center mt-8 md:mt-0">
+                    <i class="fa-solid fa-comment-dots text-2xl text-gray-400"></i>
+                    <h3 class="text-3xl font-extrabold text-gray-600">235+</h3>
+                    <p class="text-lg font-semibold text-gray-500">Happy Client Review</p>
+                </div>
+
+                <!-- Clients card -->
+                <div class="clients_card text-center mt-8 md:mt-0">
+                    <i class="fa-solid fa-comment-dots text-2xl text-gray-400"></i>
+                    <h3 class="text-3xl font-extrabold text-gray-600">235+</h3>
+                    <p class="text-lg font-semibold text-gray-500">Happy Client Review</p>
+                </div>
+
+                <!-- Clients card -->
+                <div class="clients_card text-center mt-8 md:mt-0">
+                    <i class="fa-solid fa-comment-dots text-2xl text-gray-400"></i>
+                    <h3 class="text-3xl font-extrabold text-gray-600">235+</h3>
+                    <p class="text-lg font-semibold text-gray-500">Happy Client Review</p>
+                </div>
+            </div>
+
+        </section>
 
     </main>
 
@@ -84,7 +255,7 @@
     <footer>
 
     </footer>
-
+    <br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 
 </html>
