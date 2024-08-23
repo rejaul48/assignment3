@@ -16,6 +16,17 @@
     <!-- daisyUI and tailwind css link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- slick slider  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         /* vanilla css */
         * {
@@ -63,7 +74,8 @@
                     <a href="#" class="bg-white shadow-md px-3 py-2 rounded-full hidden md:block "><i
                             class="fa-solid fa-cart-shopping"></i></a>
                     <a href="#" class="bg-[#ABEF5F] py-2 px-3 rounded-3xl hidden md:block md:font-bold md:text-[15px] ">
-                        <span class="flex-row items-center">Book Consult</span><i class="fa-solid fa-circle-arrow-right text-xl -rotate-45 text-black ml-2"></i></a>
+                        <span class="flex-row items-center">Book Consult</span><i
+                            class="fa-solid fa-circle-arrow-right text-xl -rotate-45 text-black ml-2"></i></a>
 
                     <!-- this icon or bar is only for mobile responsive -->
                     <a href="#" class="lg:hidden text-2xl bg-white shadow-md px-2 py-1 rounded-full mr-2"><i
@@ -116,39 +128,40 @@
     <!-- main content area -->
     <main>
 
-        <div class="bg-zinc-200 px-5 pb-16">
-            <!-- about us section -->
-            <section class="container mx-auto pb-16 px-2">
+        <section>
+            <div class="bg-zinc-200 px-5 pb-16">
+                <!-- about us section -->
+                <div class="container mx-auto pb-16 px-2">
 
-                <div class="about_us lg:flex pt-10 md:pt-20 gap-6 md:gap-8 lg:gap-16
+                    <div class="about_us lg:flex pt-10 md:pt-20 gap-6 md:gap-8 lg:gap-16
         
         
         ">
 
-                    <div class="left  relative
+                        <div class="left  relative
             text-center md:text-center lg:text-left
             lg:w-1/2
             ">
-                        <a href="#" class="bg-white px-2 py-1 rounded-full"><span class="mr-2"><i
-                                    class="fa-solid fa-arrow-right"></i></span>Explore our Latest works</a>
-                        <h2 class="font-extrabold my-5
+                            <a href="#" class="bg-white px-2 py-1 rounded-full"><span class="mr-2"><i
+                                        class="fa-solid fa-arrow-right"></i></span>Explore our Latest works</a>
+                            <h2 class="font-extrabold my-5
                 text-3xl
                 md:text-4xl
                 lg:text-54xl 
                 ">We design thoughtful, liveable spaces</h2>
-                        <p class="text-xs px-4 md:px-0 text-center lg:text-left mb-5 text-gray-800
+                            <p class="text-xs px-4 md:px-0 text-center lg:text-left mb-5 text-gray-800
                 md:w-4/5 md:text-center md:mx-auto 
                 lg:text-lg  lg:w-full
                 ">The barn house captivates with its blend of rustic charm and
-                            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                                modern sophistication, featuring weathered wood, sleek metal accents.</p>
 
-                        <div class="card_container 
+                            <div class="card_container 
                 
                 md:grid md:grid-cols-2 md:gap-8 md:px-8 md:my-8
                 lg:grid lg:grid-cols-1 lg:px-0 
                 ">
-                            <!-- card -->
-                            <div class="card text-left flex-row gap-4 bg-white rounded-md py-5 px-4
+                                <!-- card -->
+                                <div class="card text-left flex-row gap-4 bg-white rounded-md py-5 px-4
                     
                       w-4/5 mx-auto
                       md:w-full
@@ -156,22 +169,22 @@
                       lg:w-full
                       ">
 
-                                <div class="left flex justify-center items-center">
-                                    <img src="images/commercial.png" alt="commercial building img" class="w-[50px]">
-                                </div>
+                                    <div class="left flex justify-center items-center">
+                                        <img src="images/commercial.png" alt="commercial building img" class="w-[50px]">
+                                    </div>
 
-                                <div class="right">
-                                    <h3 class="text-lg font-bold">Commercial</h3>
-                                    <p class="text-xs text-gray-600 mt-1 
+                                    <div class="right">
+                                        <h3 class="text-lg font-bold">Commercial</h3>
+                                        <p class="text-xs text-gray-600 mt-1 
                               
                               lg:w-3/5 leading-relaxed
                               ">The barn house captivates with its blend of rustic charm and modern.</p>
+                                    </div>
+
                                 </div>
 
-                            </div>
-
-                            <!-- card -->
-                            <div class="card text-left flex-row gap-4 bg-white rounded-md py-5 px-4
+                                <!-- card -->
+                                <div class="card text-left flex-row gap-4 bg-white rounded-md py-5 px-4
                       mt-4 md:mt-0
                       w-4/5 mx-auto
                       md:w-full
@@ -179,165 +192,171 @@
                       lg:w-full 
                       ">
 
-                                <div class="left flex justify-center items-center">
-                                    <img src="images/residential.png" alt="commercial building img" class="w-[50px]">
-                                </div>
+                                    <div class="left flex justify-center items-center">
+                                        <img src="images/residential.png" alt="commercial building img"
+                                            class="w-[50px]">
+                                    </div>
 
-                                <div class="right">
-                                    <h3 class="text-lg font-bold">Residential</h3>
-                                    <p class="text-xs text-gray-600 mt-1 
+                                    <div class="right">
+                                        <h3 class="text-lg font-bold">Residential</h3>
+                                        <p class="text-xs text-gray-600 mt-1 
                               
                               lg:w-3/5 leading-relaxed
                               ">The barn house captivates with its blend of rustic charm and modern.</p>
+                                    </div>
+
                                 </div>
-
                             </div>
+
+                            <!-- top img -->
+                            <div class="absolute -top-[45px] -left-[15px] w-[80px] hidden lg:block">
+                                <img src="images/Vector.png" alt="vector img"
+                                    class="border-dashed border-2 border-gray-400 py-3 px-1">
+                            </div>
+
                         </div>
 
-                        <!-- top img -->
-                        <div class="absolute -top-[45px] -left-[15px] w-[80px] hidden lg:block">
-                            <img src="images/Vector.png" alt="vector img"
-                                class="border-dashed border-2 border-gray-400 py-3 px-1">
+
+                        <!-- about right side -->
+                        <div
+                            class="right w-4/5 mx-auto lg:w-1/2  mt-5 md:w-full   md:flex md:justify-center md:items-center">
+                            <img src="images/Rectangle.png" alt="About us img"
+                                class="border-dashed border-2 border-gray-400 h-[220px] w-full md:h-[385px] md:w-full">
                         </div>
-
                     </div>
 
-
-                    <!-- about right side -->
-                    <div
-                        class="right w-4/5 mx-auto lg:w-1/2  mt-5 md:w-full   md:flex md:justify-center md:items-center">
-                        <img src="images/Rectangle.png" alt="About us img"
-                            class="border-dashed border-2 border-gray-400 h-[220px] w-full md:h-[385px] md:w-full">
-                    </div>
                 </div>
 
-            </section>
+                <!-- client section -->
+                <section class="container mx-auto bg-white py-4 md:py-12 md:px-12 rounded-xl mt-20">
 
-            <!-- client section -->
-            <section class="container mx-auto bg-white py-4 md:py-12 md:px-12 rounded-xl mt-20">
-
-                <div class="client_card_container 
+                    <div class="client_card_container 
         md:grid md:grid-cols-2 md:gap-12
         lg:grid lg:grid-cols-4 lg:gap-16 
         ">
-                    <!-- Clients card -->
-                    <div class="clients_card text-center mt-8 md:mt-0">
-                        <i class="fa-solid fa-comment-dots text-2xl text-gray-400"></i>
-                        <h3 class="text-3xl font-extrabold text-gray-600">235+</h3>
-                        <p class="text-lg font-semibold text-gray-500">Happy Client Review</p>
+                        <!-- Clients card -->
+                        <div class="clients_card text-center mt-8 md:mt-0">
+                            <i class="fa-solid fa-comment-dots text-3xl text-gray-400 mb-2"></i>
+                            <h3 class="text-3xl font-extrabold text-gray-600">235+</h3>
+                            <p class="text-lg font-semibold text-gray-500">Happy Client Review</p>
+                        </div>
+
+                        <!-- Clients card -->
+                        <div class="clients_card text-center mt-8 md:mt-0">
+                            <i class="fa-regular fa-file-lines text-3xl text-gray-400 mb-2"></i>
+                            <h3 class="text-3xl font-extrabold text-gray-600">50+</h3>
+                            <p class="text-lg font-semibold text-gray-500">Work Departments</p>
+                        </div>
+
+                        <!-- Clients card -->
+                        <div class="clients_card text-center mt-8 md:mt-0">
+                            <i class="fa-solid fa-users text-3xl text-gray-400 mb-2"></i>
+                            <h3 class="text-3xl font-extrabold text-gray-600">30k+</h3>
+                            <p class="text-lg font-semibold text-gray-500">Happy Client</p>
+                        </div>
+
+                        <!-- Clients card -->
+                        <div class="clients_card text-center mt-8 md:mt-0">
+                            <i class="fa-solid fa-user-group text-3xl text-gray-400 mb-2"></i>
+                            <h3 class="text-3xl font-extrabold text-gray-600">307+</h3>
+                            <p class="text-lg font-semibold text-gray-500">Staff Members</p>
+                        </div>
                     </div>
 
-                    <!-- Clients card -->
-                    <div class="clients_card text-center mt-8 md:mt-0">
-                        <i class="fa-solid fa-comment-dots text-2xl text-gray-400"></i>
-                        <h3 class="text-3xl font-extrabold text-gray-600">235+</h3>
-                        <p class="text-lg font-semibold text-gray-500">Happy Client Review</p>
-                    </div>
+                </section>
 
-                    <!-- Clients card -->
-                    <div class="clients_card text-center mt-8 md:mt-0">
-                        <i class="fa-solid fa-comment-dots text-2xl text-gray-400"></i>
-                        <h3 class="text-3xl font-extrabold text-gray-600">235+</h3>
-                        <p class="text-lg font-semibold text-gray-500">Happy Client Review</p>
-                    </div>
+                <!-- our work section -->
+                <section class="container mx-auto mt-16">
 
-                    <!-- Clients card -->
-                    <div class="clients_card text-center mt-8 md:mt-0">
-                        <i class="fa-solid fa-comment-dots text-2xl text-gray-400"></i>
-                        <h3 class="text-3xl font-extrabold text-gray-600">235+</h3>
-                        <p class="text-lg font-semibold text-gray-500">Happy Client Review</p>
-                    </div>
-                </div>
-
-            </section>
-
-            <!-- our work section -->
-            <section class="container mx-auto mt-16">
-
-                <!-- section head -->
-                <div class="section head text-center">
-                    <a href="#" class="bg-white px-3 text-xs md:text-lg  py-1 rounded-full"><span class="mr-2"><i
-                                class="fa-solid fa-arrow-right "></i></span>How we works</a>
-                    <h2 class="text-lg font-bold text-gray-600 mt-4 mb-2
+                    <!-- section head -->
+                    <div class="section head text-center">
+                        <a href="#" class="bg-white px-3 text-xs md:text-lg  py-1 rounded-full"><span class="mr-2"><i
+                                    class="fa-solid fa-arrow-right "></i></span>How we works</a>
+                        <h2 class="text-lg font-bold text-gray-600 mt-4 mb-2
                 md:text-3xl md:font-semibold 
                 lg:text-4xl lg:font-extrabold
                 ">Our Works Process</h2>
-                    <p class="text-xs  mx-auto w-3/4
+                        <p class="text-xs  mx-auto w-3/4
                 md:text-lg md:w-full
                 lg:w-3/5
                 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring
-                        weathered wood, sleek metal accents.</p>
-                </div>
+                            weathered wood, sleek metal accents.</p>
+                    </div>
 
-                <!-- our work process card -->
+                    <!-- our work process card -->
 
-                <div class="our_work_process mt-6 
+                    <div class="our_work_process mt-6 
         
         md:grid md:grid-cols-2 md:gap-6
         lg:grid-cols-4 lg:gap-5
         ">
 
-                    <div class="mt-12 md:mt-0">
-                        <div class="card bg-[#E7C1D3] px-4 py-4 rounded-xl mt-8 md:mt-0">
+                        <div class="mt-12 md:mt-0">
+                            <div class="card bg-[#E7C1D3] px-4 py-4 rounded-xl mt-8 md:mt-0">
 
-                            <img src="images/concept.png" alt="light img" class="w-[40px] ">
-                            <h3 class="text-lg font-extrabold pt-2 pb-1
+                                <img src="images/concept.png" alt="light img" class="w-[40px] ">
+                                <h3 class="text-lg font-extrabold pt-2 pb-1
                 md:text-xl 
                 ">Concept</h3>
-                            <p class="text-lg  text-gray-600">The barn house captivates with its blend of rustic charm
-                                and
-                                modern.</p>
+                                <p class="text-lg  text-gray-600">The barn house captivates with its blend of rustic
+                                    charm
+                                    and
+                                    modern.</p>
 
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="mt-5 md:mt-0">
-                        <div class="card bg-[#EFDA6E] px-4 py-4 rounded-xl mt-8 md:mt-0">
+                        <div class="mt-5 md:mt-0">
+                            <div class="card bg-[#EFDA6E] px-4 py-4 rounded-xl mt-8 md:mt-0">
 
-                            <img src="images/flow-chart.png" alt="light img" class="w-[40px] ">
-                            <h3 class="text-lg font-extrabold pt-2 pb-1
+                                <img src="images/flow-chart.png" alt="light img" class="w-[40px] ">
+                                <h3 class="text-lg font-extrabold pt-2 pb-1
                 md:text-xl 
                 ">Design Process</h3>
-                            <p class="text-lg text-gray-600">The barn house captivates with its blend of rustic charm
-                                and
-                                modern.</p>
+                                <p class="text-lg text-gray-600">The barn house captivates with its blend of rustic
+                                    charm
+                                    and
+                                    modern.</p>
 
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="mt-5 md:mt-0">
-                        <div class="card bg-[#A4DAC3] px-4 py-4 rounded-xl mt-8 md:mt-0">
+                        <div class="mt-5 md:mt-0">
+                            <div class="card bg-[#A4DAC3] px-4 py-4 rounded-xl mt-8 md:mt-0">
 
-                            <img src="images/vision.png" alt="light img" class="w-[40px] ">
-                            <h3 class="text-lg font-extrabold pt-2 pb-1
+                                <img src="images/vision.png" alt="light img" class="w-[40px] ">
+                                <h3 class="text-lg font-extrabold pt-2 pb-1
                 md:text-xl 
                 ">Supervision</h3>
-                            <p class="text-lg text-gray-600">The barn house captivates with its blend of rustic charm
-                                and
-                                modern.</p>
+                                <p class="text-lg text-gray-600">The barn house captivates with its blend of rustic
+                                    charm
+                                    and
+                                    modern.</p>
 
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="mt-5 md:mt-0">
-                        <div class="card bg-[#77AAEA] px-4 py-4 rounded-xl mt-8 md:mt-0">
+                        <div class="mt-5 md:mt-0">
+                            <div class="card bg-[#77AAEA] px-4 py-4 rounded-xl mt-8 md:mt-0">
 
-                            <img src="images/budget-planning.png" alt="light img" class="w-[40px] ">
-                            <h3 class="text-lg font-extrabold pt-2 pb-1
+                                <img src="images/budget-planning.png" alt="light img" class="w-[40px] ">
+                                <h3 class="text-lg font-extrabold pt-2 pb-1
                 md:text-xl 
                 ">Budget Planning</h3>
-                            <p class="text-lg text-gray-600">The barn house captivates with its blend of rustic charm
-                                and
-                                modern.</p>
+                                <p class="text-lg text-gray-600">The barn house captivates with its blend of rustic
+                                    charm
+                                    and
+                                    modern.</p>
 
+                            </div>
                         </div>
+
+
                     </div>
 
-
-                </div>
-
-            </section>
-        </div>
+                </section>
+            </div>
+        </section>
 
         <!-- Our latest portfolio section -->
 
@@ -592,6 +611,148 @@
 
         </section>
 
+
+        <!-- challenge part section/ team member section -->
+        <section class="container mx-auto team_member mt-24">
+
+            <!-- section head -->
+            <div class="section head text-center">
+                <a href="#" class="bg-[#ABEF5F33] bg-opacity-10 px-3 text-xs md:text-lg  py-1 rounded-full"><span
+                        class="mr-2"><i class="fa-solid fa-arrow-right "></i></span>Here we are</a>
+                <h2 class="text-lg font-bold text-gray-600 mt-4 mb-2
+                    md:text-3xl md:font-semibold 
+                    lg:text-4xl lg:font-extrabold
+                    ">Meet with Our Team Member</h2>
+                <p class="text-xs  mx-auto w-3/4
+                    md:text-lg md:w-full
+                    lg:w-3/5
+                    ">A dynamic team of dedicated professionals, united by a passion for [field or goal]. We excel in
+                    [specific skills or strengths] and are committed to delivering exceptional results.</p>
+            </div>
+
+            <!-- meet our tem member -->
+            <div class="team_card w-full mt-12
+            
+            grid grid-cols-1 
+            md:grid-cols-2 md:gap-5
+            lg:grid-cols-4
+            ">
+
+                <div
+                    class="t_card mt-5 md:mt-0 mx-4 md:mx-0 text-center bg-white px-6 pb-5 shadow-xl mr-4 group rounded-lg">
+                    <div class="flex justify-center items-center overflow-hidden h-auto py-5">
+                        <img src="images/team1.png" alt="team member photo"
+                            class="w-[150px] h-[150px] rounded-full border-4 border-gray-300 text-center transform transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <h2 class="text-xl font-semibold">Jone Woods</h2>
+                    <p class="text-[15px] font-light py-2">Civil Engineer</p>
+                    <hr class="w-3/12 mx-auto my-3 border-2">
+                    <p class="px-3 text-xs">As an engineer, I thrive on turning technical challenges into tangible
+                        outcomes.
+                        With a blend of creativity and precision.</p>
+
+                    <ul class="flex justify-center items-center gap-4 mt-4">
+                        <a href="#">
+                            <li><i class="fa-brands fa-facebook text-2xl rounded-full text-[#77AAEA]"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-brands fa-square-x-twitter text-2xl rounded-full text-[#77AAEA]"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-brands fa-linkedin text-2xl rounded-full text-[#77AAEA]"></i></li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div
+                    class="t_card mt-5 md:mt-0 mx-4 md:mx-0 text-center bg-white px-6 pb-5 shadow-xl mr-4 group rounded-lg">
+                    <div class="flex justify-center items-center overflow-hidden h-auto py-5">
+                        <img src="images/team2.png" alt="team member photo"
+                            class="w-[150px] h-[150px] rounded-full border-4 border-gray-300 text-center transform transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <h2 class="text-xl font-semibold">Jone Woods</h2>
+                    <p class="text-[15px] font-light py-2">Civil Engineer</p>
+                    <hr class="w-3/12 mx-auto my-3 border-2">
+                    <p class="px-3 text-xs">As an engineer, I thrive on turning technical challenges into tangible
+                        outcomes.
+                        With a blend of creativity and precision.</p>
+
+                    <ul class="flex justify-center items-center gap-4 mt-4">
+                        <a href="#">
+                            <li><i class="fa-brands fa-facebook text-2xl rounded-full text-[#77AAEA]"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-brands fa-square-x-twitter text-2xl rounded-full text-[#77AAEA]"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-brands fa-linkedin text-2xl rounded-full text-[#77AAEA]"></i></li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div
+                    class="t_card mt-5 md:mt-0 mx-4 md:mx-0 text-center bg-white px-6 pb-5 shadow-xl mr-4 group rounded-lg">
+                    <div class="flex justify-center items-center overflow-hidden h-auto py-5">
+                        <img src="images/team3.jpeg" alt="team member photo"
+                            class="w-[150px] h-[150px] rounded-full border-4 border-gray-300 text-center transform transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <h2 class="text-xl font-semibold">Jone Woods</h2>
+                    <p class="text-[15px] font-light py-2">Civil Engineer</p>
+                    <hr class="w-3/12 mx-auto my-3 border-2">
+                    <p class="px-3 text-xs">As an engineer, I thrive on turning technical challenges into tangible
+                        outcomes.
+                        With a blend of creativity and precision.</p>
+
+                    <ul class="flex justify-center items-center gap-4 mt-4">
+                        <a href="#">
+                            <li><i class="fa-brands fa-facebook text-2xl rounded-full text-[#77AAEA]"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-brands fa-square-x-twitter text-2xl rounded-full text-[#77AAEA]"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-brands fa-linkedin text-2xl rounded-full text-[#77AAEA]"></i></li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div
+                    class="t_card mt-5 md:mt-0 mx-4 md:mx-0 text-center bg-white px-6 pb-5 shadow-xl mr-4 group rounded-lg">
+                    <div class="flex justify-center items-center overflow-hidden h-auto py-5">
+                        <img src="images/team4.jpeg" alt="team member photo"
+                            class="w-[150px] h-[150px] rounded-full border-4 border-gray-300 text-center transform transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <h2 class="text-xl font-semibold">Jone Woods</h2>
+                    <p class="text-[15px] font-light py-2">Civil Engineer</p>
+                    <hr class="w-3/12 mx-auto my-3 border-2">
+                    <p class="px-3 text-xs">As an engineer, I thrive on turning technical challenges into tangible
+                        outcomes.
+                        With a blend of creativity and precision.</p>
+
+                    <ul class="flex justify-center items-center gap-4 mt-4">
+                        <a href="#">
+                            <li><i class="fa-brands fa-facebook text-2xl rounded-full text-[#77AAEA]"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-brands fa-square-x-twitter text-2xl rounded-full text-[#77AAEA]"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa-brands fa-linkedin text-2xl rounded-full text-[#77AAEA]"></i></li>
+                        </a>
+                    </ul>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+        </section>
+
         <!-- news section -->
 
         <section class="news mt-24 container mx-auto">
@@ -834,14 +995,21 @@
 
                 <div class="book_consult mt-8 md:pt-0">
 
-                    <a href="#" class="items-center bg-[#ABEF5F] px-3 py-3 rounded-full w-3/4 lg:w-1/5 md:w-2/5 mx-auto flex justify-center"><span
-                            class="text-xl font-extrabold mr-1 ">Book Consult</span><i class="fa-solid fa-circle-arrow-right text-2xl -rotate-45 text-black"></i></a>
+                    <a href="#"
+                        class="items-center bg-[#ABEF5F] px-3 py-3 rounded-full w-3/4 lg:w-1/5 md:w-2/5 mx-auto flex justify-center"><span
+                            class="text-xl font-extrabold mr-1 ">Book Consult</span><i
+                            class="fa-solid fa-circle-arrow-right text-2xl -rotate-45 text-black"></i></a>
                 </div>
 
             </div>
 
         </div>
     </footer>
+
+
+
+
+
 
 </body>
 
