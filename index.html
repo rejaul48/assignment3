@@ -33,6 +33,20 @@
             font-family: "Manrope", sans-serie;
 
         }
+
+       
+        /* this css is just for hide up and down arrow in input field */
+        input[type='number']::-webkit-outer-spin-button,
+        input[type='number']::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type='number'] {
+            -moz-appearance: textfield;
+            
+        }
+
     </style>
 
 </head>
@@ -59,11 +73,11 @@
                 <!-- this is navbar center -->
                 <div class="navbar-center hidden lg:flex mr-2">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a class="font-semibold text-gray-700">Home</a></li>
-                        <li><a class="font-semibold text-gray-400">Services</a></li>
-                        <li><a class="font-semibold text-gray-400">Portfolio</a></li>
-                        <li><a class="font-semibold text-gray-400">Blogs</a></li>
-                        <li><a class="font-semibold text-gray-400">Contact Us</a></li>
+                        <li><a class="font-semibold text-gray-700 text-lg">Home</a></li>
+                        <li><a class="font-semibold text-gray-400 text-lg">Services</a></li>
+                        <li><a class="font-semibold text-gray-400 text-lg">Portfolio</a></li>
+                        <li><a class="font-semibold text-gray-400 text-lg">Blogs</a></li>
+                        <li><a class="font-semibold text-gray-400 text-lg">Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -138,7 +152,7 @@
                     <div class="about_us lg:flex pt-10 md:pt-20 gap-6 md:gap-8 lg:gap-16
         
         
-        "> 
+        ">
 
                         <div class="left  relative
             text-center md:text-center lg:text-left
@@ -212,8 +226,7 @@
 
                             <!-- top img -->
                             <div class="absolute -top-[45px] -left-[15px] w-[80px] hidden lg:block">
-                                <img src="images/Vector.png" alt="vector img"
-                                    class="py-3 px-1">
+                                <img src="images/Vector.png" alt="vector img" class="py-3 px-1">
                             </div>
 
                         </div>
@@ -294,7 +307,7 @@
         ">
 
                         <div class="mt-12 md:mt-0">
-                            <div class="card bg-[#E7C1D3] px-4 py-4 rounded-xl mt-8 md:mt-0" >
+                            <div class="card bg-[#E7C1D3] px-4 py-4 rounded-xl mt-8 md:mt-0">
 
                                 <img src="images/concept.png" alt="light img" class="w-[40px] animate-pulse">
                                 <h3 class="text-lg font-extrabold pt-2 pb-1
@@ -661,8 +674,7 @@
                 lg:grid-cols-none
                 ">
                     <figure class="mx-10 pt-10 md:pt-0 lg:pt-10 ">
-                        <img src="images/article1.png" alt="article1"
-                            class="rounded-xl w-full" />
+                        <img src="images/article1.png" alt="article1" class="rounded-xl w-full" />
                     </figure>
 
                     <div class="card-body ">
@@ -698,8 +710,7 @@
                   lg:grid-cols-none
                   ">
                     <figure class="mx-10 pt-10 md:pt-0 lg:pt-10">
-                        <img src="images/article2.png" alt="article1"
-                            class="rounded-xl w-full" />
+                        <img src="images/article2.png" alt="article1" class="rounded-xl w-full" />
                     </figure>
 
                     <div class="card-body ">
@@ -735,8 +746,7 @@
                   lg:grid-cols-none
                   ">
                     <figure class="mx-10 pt-10 md:pt-0 lg:pt-10">
-                        <img src="images/article3.png" alt="article1"
-                            class="rounded-xl w-full" />
+                        <img src="images/article3.png" alt="article1" class="rounded-xl w-full" />
                     </figure>
 
                     <div class="card-body ">
@@ -800,25 +810,27 @@
                     md:grid md:grid-cols-2 md:gap-5
                     ">
                         <input type="text" name="firstName" placeholder="First Name*" required
-                            class="outline-none py-3 px-4 rounded-full mt-4 md:mt-0">
+                            class="outline-none py-3 px-4 rounded-full mt-4 md:mt-0 input">
                         <input type="text" name="lastName" placeholder="Last Name*" required
-                            class="outline-none py-3 px-4 rounded-full mt-4 md:mt-0">
+                            class="outline-none py-3 px-4 rounded-full mt-4 md:mt-0 input">
                     </div>
                     <div class="num_email md:mt-4
                     grid grid-cols-1 
                     md:grid md:grid-cols-2 md:gap-5 lg:mt-5
                     ">
                         <input type="number" placeholder="Phone Number*" required
-                            class="outline-none py-3 px-4 rounded-full mt-4 md:mt-0">
+                            class="outline-none py-3 px-4 rounded-full mt-4 md:mt-0 input">
+
                         <input type="email" placeholder="Your Email*" required
-                            class="outline-none py-3 px-4 rounded-full mt-4 md:mt-0">
+                            class="outline-none py-3 px-4 rounded-full mt-4 md:mt-0 input">
 
 
                     </div>
 
                     <div class="text_area mt-5  ">
                         <textarea name="opinion" rows="6" placeholder="Write Your Message Here"
-                            class="w-full rounded-xl outline-none py-3 px-4" spellcheck="true"></textarea>
+                            class="w-full rounded-xl outline-none py-3 px-4 textarea textarea-bordered"
+                            spellcheck="true"></textarea>
                     </div>
 
                     <div class="send_btn mt-5 md:mt-8 text-center  ">
